@@ -18,7 +18,7 @@ if st.button("Predict"):
     prediction = model.predict([[hours]])
     
     if prediction[0] == 1:
-        st.success(f"Pass ({pass_percentage:.2f}% confidence)")
+        st.success(f"Pass Probability: ({pass_percentage:.2f}%)")
     else:
-        st.error(f"Fail ({fail_percentage:.2f}% confidence)")
+        st.error(f"Fail Probability({fail_percentage:.2f}%)")
 
