@@ -14,5 +14,5 @@ if st.button("Predict"):
         st.success("Pass")
         st.success(f"Pass Probability: {pass_percentage:.2f}%")
     else:
-        st.error("Fail)
+        st.error("Fail")
         st.error(f"Fail Probability: {fail_percentage:.2f}%")
