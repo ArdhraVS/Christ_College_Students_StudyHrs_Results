@@ -5,7 +5,7 @@ st.title("Student Pass/Fail based on Study Hours")
 hours=st.number_input("Enter Study Hours: ",min_value=0.0, max_value= 15.0, value=5.0)
 if st.button("Predict"):
   prediction=model.predict([[hours]])
-  if predicted[0]==1:
+  if prediction[0]==1:
     st.success("Pass")
   else:
     st.error("Fail")
